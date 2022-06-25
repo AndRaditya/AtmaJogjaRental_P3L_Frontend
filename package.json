@@ -5,17 +5,24 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "dependencies": {
+    "@mdi/font": "^6.6.96",
     "@popperjs/core": "^2.11.5",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+    "@vue/babel-preset-jsx": "^1.2.4",
     "axios": "^0.26.1",
     "core-js": "^3.8.3",
+    "html2canvas": "^1.4.1",
+    "stream": "^0.0.2",
+    "typescript": "^4.7.3",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.3",
+    "vue-router": "^3.5.4",
     "vue2-datepicker": "^3.10.4",
     "vuejs-datepicker": "^1.6.2",
-    "vuetify": "^2.6.4"
+    "vuetify": "^2.6.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

@@ -1,0 +1,189 @@
+/* 
+
+---01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+-Letter spacing
+0.5px
+0.75px
+
+---02 COLORS
+
+- Primary: #1C549B
+- Secondary: #ECA51F
+
+- Tints: 
+#4976af
+
+- Shades: 
+
+- Accents: 
+- Greys
+
+
+--- 05 SHADOWS
+
+
+
+--- 06 BORDER-RADIUS
+Default: 9px
+11px
+
+
+--- 07 WHITESPACES
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+:root {
+	font-size: 10px;
+}
+
+* {
+	font-size: 1.4rem;
+}
+
+.text-start {
+	font-size: 1.2rem !important;
+}
+
+#app {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	overflow-x: hidden;
+}
+
+template {
+	font-family: 'Inter', sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
+
+	/* only works if there's nothing absolutely positioned in relative body */
+	/* overflow-x: hidden; */
+}
+
+.index {
+	font-family: 'Inter', sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
+}
+
+.v-card__text {
+	font-size: 1.2rem !important;
+	padding: 1.2rem 0 !important;
+}
+
+.v-application .headline {
+	color: #333;
+	font-weight: 600;
+	font-size: 1.8rem !important;
+}
+
+.header {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+
+	/* background-color: #3365a5; */
+	background-image: linear-gradient(to right, #3365a5, #1c549b);
+	/* Because we want header to be sticky later */
+	height: 12.8rem;
+	padding: 0 4.8rem;
+	position: relative;
+}
+
+.v-list-item__title {
+	font-size: 1.4rem;
+}
+
+.ajr-logo-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.6rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(10%, 10%);
+}
+
+.ajr-logo-header img {
+	height: 10.6rem;
+}
+
+.heading-tertiary {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.8rem;
+}
+
+.logo {
+	height: 9.8rem;
+}
+
+.main-nav-list {
+	/*  18 / 20 / 24 / 30 */
+
+	list-style: none;
+	display: flex;
+	gap: 3.6rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-nav-link,
+.main-nav-link:visited {
+	display: inline-block;
+	color: #e8eef5 !important;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.8rem;
+	transition: all 200ms;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+	color: #eca51f;
+	text-decoration: none;
+}
+
+.main-nav-link.logout,
+.main-nav-link.logout:visited {
+	padding: 0.8rem 1.6rem;
+	border-radius: 5px;
+	color: #fff;
+	border: 1px solid #eca51f;
+	/* background-color: #d4951c; */
+}
+
+.main-nav-link.logout:hover,
+.main-nav-link.logout:active {
+	background-color: #eca51f;
+	color: #fff;
+	border: 1px solid #eca51f;
+}
+
+.v-snack__content {
+	font-size: 1.2rem !important;
+}

@@ -1,0 +1,248 @@
+/* 
+
+---01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+-Letter spacing
+0.5px
+0.75px
+
+---02 COLORS
+
+- Primary: #1C549B
+- Secondary: #ECA51F
+
+- Tints: 
+#4976af
+
+- Shades: 
+
+- Accents: 
+- Greys
+
+
+--- 05 SHADOWS
+
+
+
+--- 06 BORDER-RADIUS
+Default: 9px
+11px
+
+
+--- 07 WHITESPACES
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+:root {
+	font-size: 10px;
+}
+
+#app {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	overflow-x: hidden;
+}
+
+template {
+	font-family: "Inter", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
+
+	/* only works if there's nothing absolutely positioned in relative body */
+	/* overflow-x: hidden; */
+}
+
+.index {
+	font-family: "Inter", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
+}
+
+.profile-customer-container {
+	margin: 3.2rem;
+	/* background-color: red; */
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3.2rem;
+}
+
+.container-button {
+	grid-column: 1/-1;
+}
+
+.profile-card {
+	width: 100%;
+	padding: 3.2rem;
+	background-color: #fdf6e9;
+	box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+}
+
+.flex-foto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.heading-foto {
+	color: #333;
+	font-weight: 600;
+}
+
+.heading-primary {
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.heading {
+	grid-column: 1/-1;
+}
+
+.btn--full {
+	background-color: #1c549b;
+	color: #fff !important;
+	font-size: 1.6rem;
+	padding: 1.2rem 3.2rem;
+}
+
+.btn--full:hover,
+.btn--full:active {
+	background-color: #16437c;
+}
+
+.customer-document-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.card-container {
+	grid-column: 1/-1;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--font-body);
+	display: flex;
+	box-shadow: none !important;
+}
+
+.card-title {
+	font-size: 16px;
+	color: #ffffff;
+	/* font-weight: bold; */
+}
+
+.card-inputAtas {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#cardName {
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.card-input {
+	font-size: 16px;
+	color: #ffffff;
+	/* font-weight: bold; */
+}
+
+.card-wrapper {
+	width: 1000px;
+	height: auto;
+	background-color: #1c549b;
+	/* background: linear-gradient(#f8f8f8, #fff); */
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+	/* border-radius: 10px; */
+	overflow: hidden;
+	position: relative;
+	margin: 1.5rem;
+	display: flex;
+}
+
+.user-card {
+	width: 40%;
+	height: 500px;
+	position: relative;
+	background: #1c549b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.general-information {
+	width: 60%;
+	padding-right: 20px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #1c549b;
+}
+
+.user-photo {
+	font-size: 6em;
+	color: white;
+}
+
+.card-element {
+	margin-left: 10px;
+	margin-bottom: 15px;
+	margin-top: 6px;
+	/* margin-right: 6px; */
+}
+
+.card-name {
+	font-size: 1.5rem;
+}
+
+.college-name {
+	font-size: 1.2rem;
+}
+
+.btn-generate {
+	border: none;
+	border-radius: 3px;
+	background-color: #1c549b;
+	color: #fff;
+	font-family: var(--font-body);
+	font-weight: bold;
+	font-size: 1.6rem;
+	padding: 1.6rem 3.2rem;
+	margin-top: 1.6rem;
+	transition: all 300ms;
+}
+
+.btn-generate:hover {
+	background-color: #16437c;
+}

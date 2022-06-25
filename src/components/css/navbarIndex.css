@@ -1,17 +1,193 @@
-fieldset {
-    width: fit-content;
-    display: flex;    
+template {
+	overflow-x: hidden;
+}
+#navbarTop {
+	padding: 25px 25px !important;
+	font-weight: bold;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: flex;
 }
 
-#navbarTop {
-    padding: 25px 25px !important;
-    font-weight: bold;
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+#row-kiriAtas h2 {
+	color: rgb(57, 57, 57);
+	margin-top: 12px;
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#row-kiriAtas h3 {
+	transition: all 0.5s;
+	color: rgb(85, 85, 85);
+	margin-top: 12px;
+	font-size: 24px;
+}
+
+#navbarNav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+#navbarUl li a {
+	color: rgb(132, 132, 132);
+	text-decoration: none;
+}
+
+#navbarUl li a:hover {
+	color: rgb(0, 0, 0);
+}
+
+#navbarNav {
+	width: 65%;
+	display: flex;
+	align-items: right;
+}
+
+#logo-kiriAtas {
+	/* width: 65%; */
+	display: flex;
+	align-items: left;
+}
+
+#logo-kiriAtas a {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+#row-kiriAtas {
+	display: flex;
+	align-items: center;
+}
+
+#tulisanSelamatDatang {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* hamburger menu */
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+}
+
+.menu-toggle input {
+	position: absolute;
+	width: 52px;
+	height: 25px;
+	opacity: 0;
+	left: -17px;
+	top: -3px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.menu-toggle span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: rgb(57, 57, 57);
+	border-radius: 5px;
+	transition: all 0.5s;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+	transform-origin: 0 0;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(4) {
+	transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+	background-color: rgb(132, 132, 132);
+	transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+	background-color: rgb(132, 132, 132);
+	transform: rotate(-45deg) translate(-1px, -0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+	opacity: 0;
+	transform: scale(0);
+}
+
+/* responsive breakpoint */
+
+@media screen and (max-width: 1600px) {
+	#row-kiriAtas h3 {
+		opacity: 0;
+		transition: all 0.5s;
+		display: non;
+	}
+}
+
+/* ukuran tablet */
+@media screen and (max-width: 990px) {
+	#navbarNav ul {
+		width: 50%;
+	}
+	#row-kiriAtas {
+		display: flex;
+		width: 1%;
+	}
+	#logo-kiriAtas a h2 {
+		display: none;
+	}
+	.container-fluid {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#tulisanSelamatDatang {
+		display: none;
+	}
+	#navbarTop {
+		display: flex;
+	}
+}
+
+/* ukuran mobil */
+@media screen and (max-width: 625px) {
+	.menu-toggle {
+		display: flex;
+		position: right;
+	}
+	#navbarNav ul {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+		background-color: white;
+		z-index: -1;
+		width: 70%;
+		transform: translateX(100%);
+		transition: all 1s;
+	}
+	#navbarNav ul.slide {
+		transform: translateX(0);
+	}
+}
+
+/* .nav-item{
     display: flex;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .active a {
@@ -27,4 +203,4 @@ fieldset {
 .router {
     text-decoration: none;
     color: black;
-}
+} */
